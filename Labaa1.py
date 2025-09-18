@@ -1,37 +1,41 @@
-# Змінні всіх основних типів
-age = 15                      # int
-height = 1.70                 # float
-name = "Yevhen"               # str
-is_student = True             # bool
-hobbies = ["dota 2", "rust", "cs sourse"]   # list
-grades = (12, 11, 10)         # tuple
-person = {"name": "Yevhen", "age": 15}  # dict
-unique_numbers = {1, 2, 3}    # set
-none_value = None             # NoneType
+name = 'Yevhen'                                #тип даних str(рядок)
+age = 15                                    #тип даних int(ціле число)
+height = 1.72                               #тип даних float(з комою)
+is_student = True                           #тип даних bool(так, ні)
+hobbies = ['dance', 'books']                #тип даних list(з змінами)
+friends = {"Artem", "Vlad"}                  #тип даних set(множина)
+birthday = (3, 10, 2009)                    #тип даних tuple(без змін)
+book =  {'aftg': 'allforthegame'}           #тип даних dict (бібліотека)
 
-# Виводимо всі змінні з їх типами через type()
-print("age:", age, "(", type(age).__name__, ")")
-print("height:", height, "(", type(height).__name__, ")")
-print("name:", name, "(", type(name).__name__, ")")
-print("is_student:", is_student, "(", type(is_student).__name__, ")")
-print("hobbies:", hobbies, "(", type(hobbies).__name__, ")")
-print("grades:", grades, "(", type(grades).__name__, ")")
-print("person:", person, "(", type(person).__name__, ")")
-print("unique_numbers:", unique_numbers, "(", type(unique_numbers).__name__, ")")
-print("none_value:", none_value, "(", type(none_value).__name__, ")")
+print('name', type(name),':', name)           #type-повертає тип змінної
+print('age', type(age),':', age)
+print('height', type(height),':', height)
+print('is_student', type(is_student),':', is_student)
+print('hobbies', type(hobbies),':', hobbies)
+print('friends', type(friends),':', friends)
+print('birthday', type(birthday),':', birthday)
+print('book', type(book),':', book)
 
-# Арифметичні оператори
-x, y = 10, 3
-print("x + y =", x + y, "(", type(x + y).__name__, ")")
-print("x - y =", x - y, "(", type(x - y).__name__, ")")
-print("x * y =", x * y, "(", type(x * y).__name__, ")")
-print("x / y =", x / y, "(", type(x / y).__name__, ")")
-print("x // y =", x // y, "(", type(x // y).__name__, ")")
-print("x % y =", x % y, "(", type(x % y).__name__, ")")
-print("x ** y =", x ** y, "(", type(x ** y).__name__, ")")
+a = 52
+b = 8
 
-# Логічні оператори
-a, b = True, False
-print("a and b =", a and b, "(", type(a and b).__name__, ")")
-print("a or b =", a or b, "(", type(a or b).__name__, ")")
-print("not a =", not a, "(", type(not a).__name__, ")")
+c = a + b                #додавання
+print(c)
+
+d = a - b                #віднімання
+print(d)
+
+n = a * b                 #множення
+print(n)
+
+f = a / b                 #діленння (результат завжди float)
+print(f)
+
+g = a // b                #ділення без остачі
+print(g)
+
+s = a % b                 #остача від ділення
+print(s)
+
+x = a ** b                #піднесення до степення
+print(x)
