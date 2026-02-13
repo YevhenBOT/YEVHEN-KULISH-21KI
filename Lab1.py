@@ -26,8 +26,9 @@ class Student(Humanity):
         print(f"Я студент. Мене звати {self.name}, навчаюсь у {self.university}.")
 
 
-human = Humanity("Влад", 16)
+human = Humanity("Євген", 16)
 human.introduce()
 
-student = Student("Владислав", 16, "ТФК ЛНТУ")
+student = Student("Женя", 16, "ТФК ЛНТУ")
+
 student.introduce()
